@@ -1,0 +1,253 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+h2 {
+    color: #313b4c;
+}
+
+p {
+    color: rgba(49, 59, 76, 0.8);
+}
+
+header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 70px;
+}
+
+nav div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li:nth-child(1) {
+    color: #de4132;
+}
+
+nav button , .hero button , #plan button , #choose-us button{
+    width: 150px;
+    height: 45px;
+    background-color: #de4132;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+    margin-left: 70px;
+    height: calc(100vh - 70px);
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero span {
+    color: #de4132;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+
+.hero button:nth-child(2) , #plan button {
+    background-color: white;
+    color: #de4132;
+}
+
+#our-partners , #choose-us  {
+    padding: 75px 0px;
+    background-color: #fef9f9;
+}
+
+#our-partners h1 , #snowboard h1  {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #313b4c;
+}
+
+#our-partners span , #snowboard span , #our-newsfeed span , #choose-us span {
+    color: #de4132;
+}
+
+.logos {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#snowboard {
+    padding: 75px 0px;
+} 
+
+#snowboard .container , #our-newsfeed .container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#snowboard .card , #our-newsfeed .card {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#snowboard .card .img-card , #our-newsfeed .card img {
+    width: 100%;
+}
+
+#snowboard .card a {
+    text-decoration: none;
+    color: #de4132;
+}
+
+#snowboard .learn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#plan {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#plan h1 {
+    font-size: 40px;
+    color: white;
+}
+
+#plan p {
+    color: white;
+}
+
+#our-newsfeed {
+    height: 100vh;
+    padding: 75px 0px;
+}
+
+#our-newsfeed h1 {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #313b4c;
+}
+
+#our-newsfeed .card img {
+    border-radius: 10px;
+}
+
+#our-newsfeed .card-2 {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#our-newsfeed .card-3 {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    border-bottom: 1px rgb(158, 158, 158) solid;
+}
+
+#our-newsfeed .card-3:nth-child(4) {
+    border-bottom: none;
+}
+
+#our-newsfeed .card-3 img {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#choose-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+#choose-us h3 {
+    color: rgb(252, 175, 52);
+}
+
+#choose-us h1 {
+    margin: 0 auto;
+    font-size: 40px;
+    color: #313b4c;
+}
+
+#choose-us .choose {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+#choose-us .connect {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+
+#choose-us input {
+    width: 425px;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(242, 243, 244);
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
