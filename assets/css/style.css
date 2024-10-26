@@ -5,6 +5,20 @@
     font-family: "Cabin", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #de4132; 
+    border-radius: 12px; 
+}
+
+
 h2 {
     color: #313b4c;
 }
