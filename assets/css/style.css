@@ -24,8 +24,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
     height: 70px;
     padding: 0 70px;
+    position: fixed;
+    background-color: #fef9f995;
+    box-shadow: 1px 1px 7px #313b4c;
+    border-radius: 6px;
 }
 
 nav div {
@@ -41,25 +46,38 @@ nav ul {
     gap: 30px;
 }
 
-nav ul li:nth-child(1) {
+nav ul a{
+    text-decoration: none;
+    color: #313b4c;
+    font-weight: 500;
+}
+
+nav ul a:hover{
     color: #de4132;
 }
 
-nav button , .hero button , #plan button , #choose-us button{
+button{
     width: 150px;
     height: 45px;
-    background-color: #de4132;
+    background-color: #fef9f9;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: #de4132;
+    font-weight: 500;
     cursor: pointer;
+    box-shadow: 1px 1px 7px #313b4c;
+}
+
+button:hover{
+    background-color: #de4132;
+    color: #fef9f9;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 520px;
+    max-width: 520px;
     margin-left: 70px;
     height: calc(100vh - 70px);
     gap: 30px;
@@ -73,77 +91,99 @@ nav button , .hero button , #plan button , #choose-us button{
     color: #de4132;
 }
 
-.button {
+.buttons {
     display: flex;
     gap: 20px;
 }
 
-.hero button:nth-child(2) , #plan button {
-    background-color: white;
-    color: #de4132;
-}
-
-#our-partners , #choose-us  {
-    padding: 75px 0px;
+.our-partners , .choose-us  {
+    padding: 20px 70px;
     background-color: #fef9f9;
 }
 
-#our-partners h1 , #snowboard h1  {
+.our-partners h1 , .snowboard h1  {
     width: max-content;
-    margin: 0 auto;
     margin-bottom: 50px;
     font-size: 40px;
     color: #313b4c;
 }
 
-#our-partners span , #snowboard span , #our-newsfeed span , #choose-us span {
+.our-partners span , .snowboard span , .our-newsfeed span , .choose-us span {
     color: #de4132;
 }
 
 .logos {
-    width: 90vw;
-    margin: 0 auto;
+    padding: 0 70px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
-#snowboard {
-    padding: 75px 0px;
+.logos div{
+    max-width: 200px;
+    min-width: 150px;
+    height: 100px;
+    min-height: 75px;
+}
+
+.logos div img{
+    width: 120px;
+    height: 75px;
+}
+
+.logos div img:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+
+.snowboard {
+    padding: 70px;
 } 
 
-#snowboard .container , #our-newsfeed .container {
+.snowboard .container , .our-newsfeed .container {
     width: 90vw;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#snowboard .card , #our-newsfeed .card {
-    width: 450px;
+.snowboard .card , .our-newsfeed .card {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 7px #313b4c;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-#snowboard .card .img-card , #our-newsfeed .card img {
+.snowboard .card .img-card , .our-newsfeed .card img {
     width: 100%;
+    border-radius: 6px;
 }
 
-#snowboard .card a {
+.snowboard .card .img-card:hover , .our-newsfeed .card img:hover{
+    transform: rotateY(360deg);
+    transition: 2s ease-in-out;
+}
+
+.snowboard .card a {
     text-decoration: none;
     color: #de4132;
 }
 
-#snowboard .learn {
+.snowboard .learn {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#plan {
+.plan {
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
     height: 420px;
     color: white;
     display: flex;
@@ -153,21 +193,20 @@ nav button , .hero button , #plan button , #choose-us button{
     gap: 25px;
 }
 
-#plan h1 {
+.plan h1 {
     font-size: 40px;
     color: white;
 }
 
-#plan p {
+.plan p {
     color: white;
 }
 
-#our-newsfeed {
-    height: 100vh;
-    padding: 75px 0px;
+.our-newsfeed {
+    padding: 0 70px;
 }
 
-#our-newsfeed h1 {
+.our-newsfeed h1 {
     width: 90vw;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -175,52 +214,55 @@ nav button , .hero button , #plan button , #choose-us button{
     color: #313b4c;
 }
 
-#our-newsfeed .card img {
+.our-newsfeed .card img {
     border-radius: 10px;
 }
 
-#our-newsfeed .card-2 {
-    width: 450px;
+.our-newsfeed .card-2 {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-#our-newsfeed .card-3 {
+.our-newsfeed .card-3 {
     height: 25%;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     gap: 20px;
     border-bottom: 1px rgb(158, 158, 158) solid;
+    padding-bottom: 20px;
 }
 
-#our-newsfeed .card-3:nth-child(4) {
+.our-newsfeed .card-3:nth-child(4) {
     border-bottom: none;
 }
 
-#our-newsfeed .card-3 img {
+.our-newsfeed .card-3 img {
     width: 120px;
     height: 100px;
     border-radius: 10px;
 }
 
-#choose-us {
+.choose-us {
     display: flex;
     justify-content: space-between;
-    padding: 70px;
+    gap: 20px;
+    padding: 20 70px;
 }
 
-#choose-us h3 {
+.choose-us h3 {
     color: rgb(252, 175, 52);
 }
 
-#choose-us h1 {
+.choose-us h1 {
     margin: 0 auto;
     font-size: 40px;
     color: #313b4c;
 }
 
-#choose-us .choose {
+.choose-us .choose {
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -228,14 +270,14 @@ nav button , .hero button , #plan button , #choose-us button{
     gap: 18px;
 }
 
-#choose-us .connect {
+.choose-us .connect {
     display: flex;
     flex-direction: column;
     width: 30%;
     gap: 20px;
 }
 
-#choose-us input {
+.choose-us input {
     width: 425px;
     height: 50px;
     padding-left: 10px;
@@ -244,10 +286,57 @@ nav button , .hero button , #plan button , #choose-us button{
     background-color: rgb(242, 243, 244);
 }
 
+.choose-us input:focus{
+    outline: none;
+    border: 1px solid #de4132;
+}
+
+
 footer {
     text-align: center;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    nav , .hero , .our-partners , .logos , .snowboard , .our-newsfeed , .choose-us{
+        padding: 20px;
+    }
+    nav .logo img{
+        width: 90px;
+    }
+    nav ul{
+        display: none;
+    }
+    button{
+        width: max-content;
+        padding: 10px;
+        height: 40px;
+        font-weight: 400;
+    }
+    .hero h1 , .our-partners h1 , .snowboard h1 , .plan h1 , .our-newsfeed h1 , .choose-us h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .hero{
+        margin: 0;
+    }
+    .logos{
+        overflow-x: scroll;
+    }
+    .our-newsfeed h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .choose-us{
+        flex-direction: column;
+    }
+    .choose-us .choose{
+        width: 100%;
+    }
+    .choose-us .connect input{
+        width: 250px;
+    }
 }
